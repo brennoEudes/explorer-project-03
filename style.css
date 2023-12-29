@@ -110,7 +110,8 @@ fieldset legend {
   line-height: 20px;
 }
 
-.input-wrapper input {
+.input-wrapper input,
+.input-wrapper textarea {
   border-radius: 8px;
   border: 1px solid var(--Back-Lines-in-white, #e6e6f0);
   background: var(--Shapes-02, #fafafc);
@@ -122,4 +123,9 @@ fieldset legend {
   color: var(--Texts-Inputs, #c1bccc);
   font-size: 16px;
   line-height: 26px;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
 }
