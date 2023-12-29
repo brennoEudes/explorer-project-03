@@ -32,13 +32,46 @@
       <form>
         <!--conjunto de campos-->
         <fieldset>
-          <legend>Informações do evento</legend>
+          <div class="fieldset-wrapper"> <!--OBS: criamos esta div por conta do bug do Chrome q não considera "legend" como filho do "fieldset".-->
+            <legend>Informações do evento</legend>
 
-          <div class="input-wrapper">
-            <label for="event-title"
-              >Título do evento <span>(mínimo 8 caracteres)</span></label
-            > <!-- o "input" é inline block (inline + características do display block)-->
-            <input type="text" id="event-title" />
+            <div class="input-wrapper">
+              <label for="event-title"
+                >Título do evento <span>(mínimo 8 caracteres)</span></label
+              >
+              <!-- o "input" é inline block (inline + características do display block)-->
+              <input type="text" id="event-title" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-link"
+                >Link do evento <span>(comece com https://)</span></label
+              >
+              <!-- o "input" é inline block (inline + características do display block)-->
+              <input type="url" id="event-link" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-whatsapp"
+                >Whatsapp para contato <span>(somente números)</span></label
+              >
+              <!-- o "input" é inline block (inline + características do display block)-->
+              <input type="number" id="event-whatsapp" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-extra-info">Informações extras</label>
+              <!-- o "input" é inline block (inline + características do display block)-->
+              <input type="text" id="event-extra-info" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-category"
+                >Categoria <span>(mínimo 8 caracteres)</span></label
+              >
+              <!-- o "input" é inline block (inline + características do display block)-->
+              <input type="text" id="category" />
+            </div>
           </div>
         </fieldset>
       </form>
