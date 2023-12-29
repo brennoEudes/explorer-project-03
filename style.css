@@ -110,6 +110,10 @@ fieldset legend {
   line-height: 20px;
 }
 
+.input-wrapper label span:hover {
+    color: #706d78; /* ACESSIBILIDADE: poderia entrar em input-wrapper label span tb */
+}
+
 .input-wrapper input,
 .input-wrapper textarea {
   border-radius: 8px;
