@@ -5,8 +5,17 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   background-color: #e5e5e5;
+}
+
+/* Informar a fonte diretamente nos elementos do form, pois só no "body" da aplicação não garante a inserção! */
+body,
+input,
+button,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
 }
 
 /* pseudo elemento que permite a criação de elementos pelo CSS. No caso, antes do body. */
@@ -22,13 +31,13 @@ body::before {
 
 /* HEADER */
 header {
-    width: 736px;
-    margin: auto;   
-    padding: 80px 0px 42px 0px;
+  width: 736px; /* usamos como ref a largura do form */
+  margin: auto;
+  padding: 80px 0px 42px 0px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 header h1 {
@@ -43,5 +52,68 @@ header p {
   color: #42d3ff;
   font-size: 16px;
   font-weight: 400;
+  line-height: 26px;
+}
+
+/* FORM */
+form {
+  background-color: #fafafc;
+  border-radius: 8px;
+
+  width: 736px;
+  min-height: 300px;
+  margin: auto;
+  padding: 64px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: "Archivo", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #e6e6f0;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  color: #4e4958;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+
+  color: #c1bccc;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-wrapper input {
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #e6e6f0);
+  background: var(--Shapes-02, #fafafc);
+
+  width: 608px;
+  height: 56px;
+  padding: 0 24px;
+
+  color: var(--Texts-Inputs, #c1bccc);
+  font-size: 16px;
   line-height: 26px;
 }

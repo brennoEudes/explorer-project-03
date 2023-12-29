@@ -15,21 +15,33 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1>
-        Crie e compartilhe
-        <br />
-        seu evento.
-      </h1>
-      <p>
-        O primeiro passo é preencher esse
-        <br />
-        formulário de inscrição.
-      </p>
-    </header>
+    <div class="page">
+      <header>
+        <h1>
+          Crie e compartilhe
+          <br />
+          seu evento.
+        </h1>
+        <p>
+          O primeiro passo é preencher esse
+          <br />
+          formulário de inscrição.
+        </p>
+      </header>
 
-    <form>
-      <!--aqui entra inputs e estruturas do form-->
-    </form>
+      <form>
+        <!--conjunto de campos-->
+        <fieldset>
+          <legend>Informações do evento</legend>
+
+          <div class="input-wrapper">
+            <label for="event-title"
+              >Título do evento <span>(mínimo 8 caracteres)</span></label
+            > <!-- o "input" é inline block (inline + características do display block)-->
+            <input type="text" id="event-title" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
