@@ -32,7 +32,8 @@
       <form>
         <!--conjunto de campos-->
         <fieldset>
-          <div class="fieldset-wrapper"> <!--OBS: criamos esta div por conta do bug do Chrome q não considera "legend" como filho do "fieldset".-->
+          <div class="fieldset-wrapper">
+            <!--OBS: criamos esta div por conta do bug do Chrome q não considera "legend" como filho do "fieldset".-->
             <legend>Informações do evento</legend>
 
             <div class="input-wrapper">
@@ -55,13 +56,11 @@
               <label for="event-whatsapp"
                 >Whatsapp para contato <span>(somente números)</span></label
               >
-              <!-- o "input" é inline block (inline + características do display block)-->
               <input type="number" id="event-whatsapp" />
             </div>
 
             <div class="input-wrapper">
               <label for="event-info">Informações extras</label>
-              <!-- o "input" é inline block (inline + características do display block)-->
               <textarea id="event-info"></textarea>
             </div>
 
@@ -69,8 +68,11 @@
               <label for="event-category"
                 >Categoria <span>(mínimo 8 caracteres)</span></label
               >
-              <!-- o "input" é inline block (inline + características do display block)-->
-              <input type="text" id="category" />
+              <select id="event-category">
+                <option value="live">Ao-vivo</option>
+                <option value="podcast">Podcast</option>
+                <option value="mentorship">Mentoria</option>
+              </select>
             </div>
           </div>
         </fieldset>
