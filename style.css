@@ -239,3 +239,12 @@ footer .button:hover {
 /* input:invalid {
   border: 1px solid red;
 } */
+
+input:required:not(:placeholder-shown):invalid  {
+  border: 1px solid red;
+}
+
+input::placeholder{
+color: rgba(193, 192, 192, 0.705);
+}
+

@@ -41,7 +41,7 @@
                 >Título do evento <span>(mínimo 8 caracteres)</span></label
               >
               <!-- o "input" é inline block (inline + características do display block)-->
-              <input type="text" id="event-title" required minlength="8" />
+              <input type="text" id="event-title" required minlength="8" placeholder="Digite o título do evento" />
             </div>
 
             <div class="input-wrapper">
@@ -49,19 +49,19 @@
                 >Link do evento <span>(comece com https://)</span></label
               >
               <!-- o "input" é inline block (inline + características do display block)-->
-              <input type="url" id="event-link" required />
+              <input type="url" id="event-link" required placeholder="Digite a url do evento" />
             </div>
 
             <div class="input-wrapper">
               <label for="event-whatsapp"
                 >Whatsapp para contato <span>(somente números)</span></label
               >
-              <input type="number" id="event-whatsapp" required/>
+              <input type="number" id="event-whatsapp" required placeholder="(__) _____ ____"/>
             </div>
 
             <div class="input-wrapper">
               <label for="event-info">Informações extras</label>
-              <textarea id="event-info" maxlength="100"></textarea>
+              <textarea id="event-info" maxlength="100" placeholder="Digite aqui..."></textarea>
             </div>
 
             <div class="input-wrapper">
@@ -86,7 +86,7 @@
                 >E-mail do administrador
                 <span>(digite um email válido)</span></label
               >
-              <input type="email" id="event-email" required />
+              <input type="email" id="event-email" required placeholder="Digite seu email" />
             </div>
 
             <div class="input-wrapper">
@@ -94,7 +94,7 @@
                 >Senha de acesso para os participantes
                 <span>(mínimo 8 caracteres)</span></label
               >
-              <input type="password" id="event-password" required minlength="8" />
+              <input type="password" id="event-password" required minlength="8" placeholder="Digite sua senha" />
             </div>
 
             <div class="checkbox-wrapper">
@@ -111,17 +111,17 @@
             <div class="col-3"> <!--Boas práticas: não iniciar nome de classe com nº-->
               <div class="input-wrapper">
                 <label for="event-date">Data</label>
-                <input type="date" id="event-date" required/>
+                <input type="date" id="event-date"/> <!--OBS: tirei o required pois estava começando como inválido-->
               </div>
 
               <div class="input-wrapper">
                 <label for="event-begin">Das</label>
-                <input type="time" id="event-begin" required />
+                <input type="time" id="event-begin"/>
               </div>
 
               <div class="input-wrapper">
                 <label for="event-end">Até</label>
-                <input type="time" id="event-end" required/>
+                <input type="time" id="event-end"/>
               </div>
             </div>
           </div>
