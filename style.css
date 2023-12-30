@@ -234,3 +234,8 @@ footer .button:hover {
   background-color: #11af58;
 
 }
+
+/* VALIDATIONS */
+input:invalid {
+  border: 1px solid red;
+}
