@@ -133,7 +133,7 @@ fieldset legend {
   background: var(--Shapes-02, #fafafc);
 
   height: 56px;
-  padding: 0 24px;
+  padding: 0 24px; /* Deixa a distribuição horizontal dos campos mais equilibrada */
 
   color: var(--Texts-Inputs, #c1bccc);
   font-size: 16px;
